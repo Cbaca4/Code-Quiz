@@ -1,0 +1,58 @@
+<!-- points to attack start button, letters with answers, score section, -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+</head>
+<!-- added a start quiz button with text-->
+<body>
+    <div id="quiz-container"></div>
+    <div class="page one">
+        <h2 class="quiz-header">Coding Quiz</h2>
+        <button class="btn-starter">Start Quiz!</button>
+    </div>
+    <div class="page two" id="quizQuestions">
+        <h5 class="quiz-header"></h5>
+        <h6 class="question"></h6>
+<!--Added the a through d selection buttons to use when picking answers--> 
+        <ul>
+            <li>
+                <input type="radio" id="a" name="options" value="a">
+                <label for="a" id="label-a"></label>
+           
+                <input type="radio" id="b" name="options" value="b">
+                <label for="b" id="label-b"></label>
+       
+                <input type="radio" id="c" name="options" value="c">
+                <label for="c" id="label-c"></label>
+        
+                <input type="radio" id="d" name="options" value="d">
+                <label for="d" id="label-d"></label>
+            </li>
+        </ul>
+        <!-- added timer portion w next question button-->
+        <p class="Time">Timer</p>
+        <p class="points">Points: 0</p>
+        <button class="btn-submit">Next Question</button>
+    </div>
+<!-- this section added is to show final scores with initials-->
+    <div class="page three">
+        <h2 class="score-page">All done!</h2>
+        <p>Your final score is <span id="points">__</span></p>
+        <p>Enter initials:</p>
+        <input type="text">
+        <button class="btn-score">Submit</button>
+    </div>
+    <!--displays your high scores after evry test taken-->
+    <div class="page four">
+        <h2>High Score</h2>
+        <p class="winner"></p>
+        <button class="btn-starter">back to start</button>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
